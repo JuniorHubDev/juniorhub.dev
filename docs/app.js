@@ -2057,7 +2057,11 @@ process.umask = function() { return 0; };
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
+ // Set config defaults when creating the instance
 
+var instance = axios__WEBPACK_IMPORTED_MODULE_0___default.a.create({
+  baseURL: 'https://wt-3652123198c9c0acc205c1e1e15a38ca-0.sandbox.auth0-extend.com'
+});
 var app = {
   init: function init() {
     this.inviteForm();
@@ -2071,13 +2075,17 @@ var app = {
 
     inviteForm.addEventListener("submit", function (event) {
       event.preventDefault();
-      axios__WEBPACK_IMPORTED_MODULE_0___default.a.post("https://wt-3652123198c9c0acc205c1e1e15a38ca-0.sandbox.auth0-extend.com/slack-inviter-poster", {
+      instance.post("/slack-inviter-poster", {
         "Name": inviteForm.querySelector("[name=name]").value,
         "Email": inviteForm.querySelector("[name=email]").value,
         "Experience level": inviteForm.querySelector("[name=experience_level]").value,
         "Reason for joining": inviteForm.querySelector("[name=reason_for_joining]").value
+      }, {
+        headers: {
+          'Content-Type': 'application/json'
+        }
       }).then(function () {
-        alert("Sent");
+        alert("Thank you, your form has been sent, your Slack invite will be emailed to you shortly!");
       });
     });
   }
@@ -2104,8 +2112,8 @@ app.init();
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/NSF01/Sites/personal/src/js/app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! /Users/NSF01/Sites/personal/src/scss/main.scss */"./src/scss/main.scss");
+__webpack_require__(/*! /Users/NSF01/Sites/juniorhub.dev/src/js/app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! /Users/NSF01/Sites/juniorhub.dev/src/scss/main.scss */"./src/scss/main.scss");
 
 
 /***/ })

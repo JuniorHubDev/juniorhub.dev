@@ -18,10 +18,10 @@ mix
         host: '0.0.0.0',
         },
     })
-    .js('src/js/app.js', 'dist/')
-    .sass('src/scss/main.scss', 'dist/')
-    .setPublicPath('dist');
-    
+    .js('src/js/app.js', 'docs/')
+    .sass('src/scss/main.scss', 'docs/')
+    .setPublicPath('docs');
+
 
 // Full API
 // mix.js(src, output);

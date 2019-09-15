@@ -1,15 +1,9 @@
 .service {
   margin-top: $margin-medium;
 
-  &:hover {
-    .service__icon i,
-    .service__heading {
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      @include gradient-background;
+    &__icon i {
+      color: $accent-color;
     }
-  }
 
   &__icon {
     font-size: 2rem;

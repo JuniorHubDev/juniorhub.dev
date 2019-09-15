@@ -1,13 +1,40 @@
+import axios from "axios";
+
+// Set config defaults when creating the instance
+const instance = axios.create({
+  baseURL: 'https://wt-3652123198c9c0acc205c1e1e15a38ca-0.sandbox.auth0-extend.com'
+});
+
+
+
 const app = {
 
   init() {
-    this.toggleHamburger();
+    this.inviteForm();
   },
 
-  toggleHamburger() {
-    const hamburger = document.querySelector(".hamburger");
-    hamburger.addEventListener("click", function() {
-      hamburger.classList.toggle("active");
+  inviteForm() {
+    const inviteForm = document.querySelector(".js-invite-form");
+
+    if(!inviteForm) {
+      return;
+    }
+
+    inviteForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      instance.post("/slack-inviter-poster", {
+        "Name": inviteForm.querySelector("[name=name]").value,
+        "Email": inviteForm.querySelector("[name=email]").value,
+        "Experience level": inviteForm.querySelector("[name=experience_level]").value,
+        "Reason for joining": inviteForm.querySelector("[name=reason_for_joining]").value
+      }, {
+        headers: {
+          'Content-Type': 'application/json',
+        }
+      }).then(() => {
+        alert("Thank you, your form has been sent, your Slack invite will be emailed to you shortly!");
+      });
     })
   }
 }

@@ -5,4 +5,8 @@
     padding: 0.5rem;
     display: inline-block;
   }
+
+  &__icon:hover {
+    color: $accent-color;
+  }
 }

@@ -1,6 +1,7 @@
 .button {
   padding: 0.5rem 2rem;
-  @include gradient-background;
+  border-radius: 20px;
+  background-color: $accent-color;
   border: none;
   color: $button-text-color;
   font-family: $button-font-family;

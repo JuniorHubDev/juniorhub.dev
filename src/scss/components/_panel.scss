@@ -1,8 +1,11 @@
 .panel {
   padding: $panel-padding 0;
 
-  &.panel--light {
-    background-color: $light-panel-color;
+  &.panel--hero {
+    background-image: url("/img/web-banner@2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &.panel--dark {

@@ -1,9 +1,17 @@
 .body {
   font-family: $body-font-family;
-  color: $body-color;
   font-weight: 300;
-  font-size: 0.875rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
+
+  &.body--light {
+    color: $text-color-primary;
+  }
+
+  &.body--dark {
+      color: $text-color-secondary
+      ;
+  }
 
   &.body--margin-lg {
     margin-bottom: 5rem;

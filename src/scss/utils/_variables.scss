@@ -2,6 +2,10 @@
 $primary-color: #8490ff;
 $primary-color-opacity: rgba(132, 144, 255, 0.1);
 $secondary-color: #62bdfc;
+$accent-color: #FF6F3C;
+
+$text-color-primary: #fff;
+$text-color-secondary: #777;
 
 $heading-color: #222;
 $body-color: #777;
@@ -15,7 +19,7 @@ $border-color: #eee;
 $footer-color: #04091e;
 
 ///*** FONTS ***///
-$heading-font-family: "Poppins", sans-serif;
+$heading-font-family: 'Roboto', sans-serif;
 $body-font-family: $heading-font-family;
 $button-font-family: $heading-font-family;
 
@@ -24,7 +28,7 @@ $container-width: 1140px;
 $gutter-width: 1rem;
 
 ///*** PANEL ***///
-$panel-padding: 7.5rem;
+$panel-padding: 4.5rem;
 
 ///*** MARGINS ***///
 $margin-medium: 1.5rem;

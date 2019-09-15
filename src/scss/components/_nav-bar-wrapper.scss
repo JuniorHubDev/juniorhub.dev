@@ -1,7 +1,5 @@
 .nav-bar-wrapper {
-  position: sticky;
-  top: 0;
-  background-color: #fff;
   width: 100%;
-  z-index: $z-index-1;
+  padding-top: 1rem;
+  @include gradient-background;
 }

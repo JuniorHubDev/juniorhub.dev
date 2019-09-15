@@ -1,8 +1,13 @@
 .main-heading {
-  color: $heading-color;
+  color: $text-color-primary;
   font-size: 2.25rem;
   font-family: $heading-font-family;
   font-weight: 600;
+  line-height: 1.1;
+
+  &--dark {
+    color: $text-color-secondary;
+  }
 
   &.main-heading--caps {
     text-transform: uppercase;

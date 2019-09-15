@@ -4,5 +4,10 @@
   &__body {
     line-height: 1.6;
     box-sizing: border-box;
+
+    &--form {
+    // height: 100vh;
+    @include gradient-background;
+    }
   }
 }

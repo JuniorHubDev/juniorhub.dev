@@ -1,6 +1,6 @@
 # Personal
 
-A test site for my learning and development.
+The juniorhub landing page
 
 ## Getting Started
 

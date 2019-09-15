@@ -24,10 +24,10 @@ const app = {
       event.preventDefault();
 
       instance.post("/slack-inviter-poster", {
-        "Name": inviteForm.querySelector("[name=name]").value,
-        "Email": inviteForm.querySelector("[name=email]").value,
-        "Experience level": inviteForm.querySelector("[name=experience_level]").value,
-        "Reason for joining": inviteForm.querySelector("[name=reason_for_joining]").value
+        "name": inviteForm.querySelector("[name=name]").value,
+        "email": inviteForm.querySelector("[name=email]").value,
+        "experience_level": inviteForm.querySelector("[name=experience_level]").value,
+        "reason_for _joining": inviteForm.querySelector("[name=reason_for_joining]").value
       }, {
         headers: {
           'Content-Type': 'application/json',

@@ -26,7 +26,12 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
+
+      @include large-screen {
+        align-items: flex-start;
+      }
+
     }
 
     &.container__col--no-padding {

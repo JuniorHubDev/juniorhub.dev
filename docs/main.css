@@ -8373,6 +8373,13 @@ readers do not read off random characters that represent icons */
   }
 }
 
+.container__col.container__col--h-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .container__col.container__col--no-padding {
   padding: 0;
 }
@@ -8525,6 +8532,11 @@ readers do not read off random characters that represent icons */
 .img-responsive {
   width: 100%;
   max-width: 100%;
+}
+
+.img-responsive--stickers {
+  max-width: 350px;
+  border-radius: 50%;
 }
 
 .link {

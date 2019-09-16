@@ -8298,6 +8298,17 @@ readers do not read off random characters that represent icons */
   color: #fff;
 }
 
+.body.body--center,
+.body--center.pricing-card__list-item,
+.body--center.blog-post {
+  text-align: center;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .button {
   padding: 0.5rem 2rem;
   border-radius: 20px;
@@ -8538,6 +8549,10 @@ readers do not read off random characters that represent icons */
   color: #777;
 }
 
+.main-heading--margin-top {
+  margin-top: 2rem;
+}
+
 .main-heading.main-heading--caps {
   text-transform: uppercase;
   margin-bottom: 0.875rem;
@@ -8754,6 +8769,7 @@ readers do not read off random characters that represent icons */
 }
 
 .social-media__icon {
+  color: white;
   padding: 0.5rem;
   display: inline-block;
 }

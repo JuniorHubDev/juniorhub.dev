@@ -13,6 +13,10 @@
     color: $text-color-secondary;
   }
 
+  &--margin-top {
+    margin-top: 2rem;
+  }
+
   &.main-heading--caps {
     text-transform: uppercase;
     margin-bottom: 0.875rem;

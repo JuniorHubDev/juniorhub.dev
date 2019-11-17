@@ -1,9 +1,0 @@
-.hero-image {
-  width: 100%;
-  max-width: 100%;
-
-  @include large-screen {
-    margin-top: -$panel-padding;
-    margin-bottom: -$panel-padding;
-  }
-}

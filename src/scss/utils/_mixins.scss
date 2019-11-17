@@ -1,9 +1,0 @@
-@mixin gradient-background {
-  background-image: linear-gradient(to left, #6d71eb, #454aec);
-}
-
-@mixin large-screen {
-  @media (min-width: $tablet-width) {
-    @content;
-  }
-}

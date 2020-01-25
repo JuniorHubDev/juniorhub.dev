@@ -6,6 +6,7 @@ import "./App.css";
 import { NavBarWrapper } from "./Components/NavBarWrapper";
 import { Container } from "./Components/Container";
 import { NavBar } from "./Components/NavBar";
+import { Panel } from "./Components/Panel";
 
 export const App = () => {
   return (
@@ -15,6 +16,7 @@ export const App = () => {
           <NavBar></NavBar>
         </Container>
       </NavBarWrapper>
+      <Panel gradient></Panel>
     </div>
   );
 };

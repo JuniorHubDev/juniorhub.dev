@@ -5,7 +5,9 @@ export function disableForm(form) {
   btn.textContent = "Submitting...";
 
   const inputs = Array.from(form.querySelectorAll(".form__input"));
-  inputs.map(input => input.disabled = true);
+  inputs.map(input => {
+      input.disabled = true;
+  });
 }
 
 export function resetForm(form) {
@@ -16,7 +18,7 @@ export function resetForm(form) {
 
   const inputs = Array.from(form.querySelectorAll(".form__input"));
   inputs.map(input => {
-      input.disabled = true;
+      input.disabled = false;
       input.value = "";
     });
   

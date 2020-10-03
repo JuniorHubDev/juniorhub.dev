@@ -1,4 +1,5 @@
 import axios from "axios";
+import {disableForm,resetForm} from "./formHelper/formHelper";
 
 // Set config defaults when creating the instance
 const instance = axios.create({
@@ -33,7 +34,11 @@ const app = {
           'Content-Type': 'application/json',
         }
       }).then(() => {
-        alert("Thank you, your form has been sent, your Slack invite will be emailed to you shortly!");
+        disableForm(inviteForm);
+        setTimeout(()=>{
+          alert("Thank you, your form has been sent, your Slack invite will be emailed to you shortly!");
+          resetForm(inviteForm);
+        },1500);
       });
     })
   }

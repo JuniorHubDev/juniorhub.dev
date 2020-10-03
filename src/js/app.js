@@ -23,6 +23,7 @@ const app = {
 
     inviteForm.addEventListener("submit", function(event) {
       event.preventDefault();
+
       instance.post("/slack-inviter-poster", {
         "name": inviteForm.querySelector("[name=name]").value,
         "email": inviteForm.querySelector("[name=email]").value,
